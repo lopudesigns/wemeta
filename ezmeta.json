@@ -1,0 +1,21 @@
+{
+
+	"ezportal" : {
+		"desired local http port" : 5678
+	},
+	"ezapp" : {
+		"desired local http port" : 3456
+	},
+	"ezauth" : {
+		"desired local http port" : 5555
+	},
+	"ezapi" : {
+		"desired local http port" : 8090	
+	},
+	"ezpeer" : {
+		"desired local wss port" : 2001,
+		"alternative names" : "eznode"
+	}
+
+
+}
