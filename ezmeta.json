@@ -2,7 +2,7 @@
 	"ezsignup" : {
 		"names" : ["ezsignup"],
 		"desired local http port" : 5678,
-		"aliases" : [
+		"previously" : [
 			"steem signup",
 			"faucet"
 		],
@@ -22,7 +22,7 @@
 	"ezapp" : {
 		"names" : ["ezapp"],
 		"desired local http port" : 3456,
-		"aliases" : [
+		"previously" : [
 			"busy.org",
 			"ezclient"
 		]
@@ -30,7 +30,7 @@
 	"ezauth" : {
 		"names" : ["ezauth"],
 		"desired local http port" : 5555,
-		"aliases" : [
+		"previously" : [
 			"v2.steemconnect.com",
 			"steemconnect.com"
 		],
@@ -45,6 +45,24 @@
 				"desired local http port" : 5432,
 				"access url template" : "postgresql://user:password@localhost:port/db" 
 			}
+		]
+	},
+	"ezcrypto.js" : {
+		"names" : ["ezcrypto.js"],
+		"previously" : [
+			"libcrypto-js"
+		]
+	},
+	"ezrpc.js" : {
+		"names" : ["ezrpc.js"],
+		"previously" : [
+			"rpc-auth"
+		]
+	},
+	"eznode.js" : {
+		"names" : ["eznode.js"],
+		"previously" : [
+			"dsteem"
 		]
 	},
 	"eznode" : {
@@ -64,5 +82,119 @@
 				]
 			}
 		}
-	}
+	},
+	"keywords" : [
+		{
+			"names" : ["Ezira Auth"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["Ezira Network"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["eziranetwork"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["ezauth"],
+			"maps"	: [
+				"steemconnect"
+			]
+		},
+		{
+			"names" : ["ezsignup"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["eznode"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["ezpeer"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["ezapi"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["ezconsole"],
+			"synonyms"	: [
+				"ezauth"
+			]
+		},
+		{
+			"names" : ["ezj"],
+			"maps"	: [
+				{ 
+					"from" : "steem.js",
+					"to"	 : "ezj.js"
+				},
+				{ 
+					"from" : "Steem.js",
+					"to"	 : "Ezj.js"
+				},
+				{ 
+					"from" : "steem-js",
+					"to"	 : "ezj"
+				},
+				{ 
+					"from" : "Steem-js",
+					"to"	 : "Ezj"
+				},
+				{ 
+					"from" : "steemjs",
+					"to"	 : "ezj"
+				},
+				{ 
+					"from" : "Steemjs",
+					"to"	 : "Ezj"
+				},
+				{ 
+					"from" : "SteemJs",
+					"to"	 : "Ezj"
+				},
+				{ 
+					"from" : "SteemJS",
+					"to"	 : "Ezj"
+				}
+			]
+		}
+	]
 }
