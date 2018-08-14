@@ -10,7 +10,7 @@
 			{
 				"names" : ["mysql"],
 				"public interface" : {
-					"names" : ["ezmsql"],
+					"names" : ["ezsql"],
 					"port" : 443,
 					"ssl" : true
 				},
