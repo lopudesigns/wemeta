@@ -1,3 +1,3 @@
 ### EZ META
 
-ezmeta.json
+[ezmeta.json](https://github.com/lopudesigns/ezmeta/blob/dev/ezmeta.json)
