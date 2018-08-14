@@ -1,21 +1,68 @@
 {
-
-	"ezportal" : {
-		"desired local http port" : 5678
+	"ezsignup" : {
+		"names" : ["ezsignup"],
+		"desired local http port" : 5678,
+		"aliases" : [
+			"steem signup",
+			"faucet"
+		],
+		"dependancies" : [
+			{
+				"names" : ["mysql"],
+				"public interface" : {
+					"names" : ["ezmsql"],
+					"port" : 443,
+					"ssl" : true
+				},
+				"desired local http port" : 5432,
+				"access url template" : "mysql://user:password@localhost:port/db" 
+			}
+		]
 	},
 	"ezapp" : {
-		"desired local http port" : 3456
+		"names" : ["ezapp"],
+		"desired local http port" : 3456,
+		"aliases" : [
+			"busy.org",
+			"ezclient"
+		]
 	},
 	"ezauth" : {
-		"desired local http port" : 5555
+		"names" : ["ezauth"],
+		"desired local http port" : 5555,
+		"aliases" : [
+			"v2.steemconnect.com",
+			"steemconnect.com"
+		],
+		"dependancies" : [
+			{
+				"names" : ["postgresql"],
+				"public interface" : {
+					"names" : ["ezpsql"],
+					"port" : 443,
+					"ssl" : true
+				},
+				"desired local http port" : 5432,
+				"access url template" : "postgresql://user:password@localhost:port/db" 
+			}
+		]
 	},
-	"ezapi" : {
-		"desired local http port" : 8090	
-	},
-	"ezpeer" : {
-		"desired local wss port" : 2001,
-		"alternative names" : "eznode"
+	"eznode" : {
+		"names" : ["eznode"],
+		"ports" : {
+			"wss" : {
+				"names" : ["ezpeer"],
+				"desired local wss port" : 2001,
+				"aliases" : [
+				]
+			},
+			"http" : {
+				"names" : ["ezapi"],
+				"desired local http port" : 8090,
+				"aliases" : [
+					"RPC endpoint"
+				]
+			}
+		}
 	}
-
-
 }
