@@ -1,0 +1,185 @@
+{
+	"name" : "smart contract for having 2 aliens received from doing 2 pushups while holding 50kg's equal $100,000",
+	"owner" : "haz",
+	"signature" : {
+		"owner" : {
+			"name" : "special value",
+			"anyvaluein": [
+				"haz"
+				// add more usernames to allow other trusted people to verify sub-contracts
+			]									
+		}
+	},
+	"signees" : [
+		{
+			"name" : "special value",
+			"value": "context.inner"									
+		} // can be any username, will be the username
+	],
+	"in" : [
+		{
+			"name" : "smart contract receipt",
+			"owner" : {
+				"name" : "special value",
+				"value": "this.signess[0]"									
+			},
+			"signature" : {
+				"owner" : {
+					"name" : "special value",
+					"anyvaluein": [
+						"haz"
+						// add more usernames to allow other trusted people to verify sub-contracts
+					]									
+				}
+			},
+			"in" : [
+				{
+					"name" : "smart contract receipt",
+					"owner" : {
+						"name" : "special value",
+						"value": "this.signess[0]"									
+					},
+					"signature" : {
+						"owner" : {
+							"name" : "special value",
+							"anyvaluein": [
+								"haz"
+								// add more usernames to allow other trusted people to verify sub-contracts
+							]									
+						}
+					},
+					"in" : [
+						{
+							"name" : "pushup",
+							"person doing the pushup" : {
+								"username" : {
+									"name" : "special value",
+									"value": "this.signess[0]"									
+								},
+								"states" : [
+									{
+										"name" : "state",
+										"state" : "holding 50kg's on back",
+										"owner" : {
+											"name" : "special value",
+											"value": "this.signess[0]"									
+										},
+										"signature" : {
+											"owner" : {
+												"name" : "special value",
+												"anyvaluein": [
+													"haz"
+													// add more usernames to allow other trusted people to verify sub-contracts
+												]									
+											}
+										}									
+									}
+								]
+							}
+						},
+						{
+							"name" : "pushup",
+							"person doing the pushup" : {
+								"username" : {
+									"name" : "special value",
+									"value": "this.signess[0]"									
+								},
+								"states" : [
+									{
+										"name" : "state",
+										"state" : "holding 50kg's on back",
+										"owner" : {
+											"name" : "special value",
+											"value": "this.signess[0]"									
+										},
+										"signature" : {
+											"owner" : {
+												"name" : "special value",
+												"anyvaluein": [
+													"haz"
+													// add more usernames to allow other trusted people to verify sub-contracts
+												]									
+											}
+										} 
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"out" : [
+				// either output a transaction object transferring the asset from signature to signee
+				{
+					"name"   : "transaction",
+					"from"	 : {
+						"name" : "special value",
+						"value": "this.signees[0]"
+					},
+					"to" : {
+						"name" : "special value",
+						"value": "this.signess[0]"	
+					},								
+					"what" : "100000", // $100,000 eUSD
+					"signature" : {
+						"owner" : {
+							"name" : "special value",
+							"anyvaluein" : [
+								"haz"
+								// add more usernames to allow other trusted people to verify sub-contracts
+							]
+						}
+					}
+				},
+				{
+					"name" 	: "hotdogs",
+					"value"	: [
+						{
+							"name" 		 : "hotdog",
+							"quantity" : 1
+						},
+						{
+							"name" 		 : "hotdog",
+							"quantity" : 1
+						}
+					],
+					"signature" : {
+						"owner" : {
+							"name" : "special value",
+							"anyvaluein": [
+								"haz"
+								// add more usernames to allow other trusted people to verify sub-contracts
+							]									
+						}
+					}
+				}
+			]
+		}
+	],
+	"out" : [
+		{
+			"name"   : "send transaction",
+			"from"	 : {
+				"name" : "special value",
+				"value": "this.signature.owner"
+			},
+			"to" : {
+				"name" : "special value",
+				"value": "this.signess[0]"	
+			},								
+			"what" : {
+				"name" 	 : "eUSD",
+				"quantity" : 100000 // $100,000 eUSD
+			},
+			"signature" : {
+				"owner" : {
+					"name" : "special value",
+					"anyvaluein" : [
+						"haz"
+						// add more usernames to allow other trusted people to verify sub-contracts
+					]
+				}
+			}
+		}
+	]
+}

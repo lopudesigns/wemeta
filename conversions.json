@@ -1,0 +1,10 @@
+{
+	"conversions" : {
+		"SPECIAL" : {
+			"current" : "SlaterPECIAL",
+			"future" : {
+				"SlaterPECIAL" : "SPECIAL"
+			}
+		}
+	}
+}
