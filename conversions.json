@@ -5,6 +5,52 @@
 			"future" : {
 				"SlaterPECIAL" : "SPECIAL"
 			}
-		}
-	}
+		},
+		"DISPLAY" : {
+			"current" : "DISlaterPLAY",
+			"future" : {
+				"DISlaterPLAY" : "DISPLAY"
+			}
+		},
+		"SimpleSteemAPIClient" : {
+			"current" : "SimpleStechangeemAPIClient",
+			"future" : {
+				"SimpleStechangeemAPIClient" : "SimpleSteemAPIClient"
+			}
+		},
+		"sbds" : {
+			"current" : "sbchangeds",
+			"future" : {
+				"sbchangeds" : "sbds"
+			}
+		},
+		"sbd2paypal" : {
+			"current" : "sbchanged2paypal",
+			"future" : {
+				"sbchanged2paypal" : "sbd2paypal"
+			}
+		},
+		"SteemConnect" : {
+			"current" : "ezAuth",
+			"future" : {
+				"ezAuth" : "SteemConnect"
+			}
+		},
+		"sy.org/steemconnect/@noisy/how-to-configure-steemconnect-v2-" : {
+			"current" : "sy.org/stechangeemconnect/@noisy/how-to-configure-stechangeemconnect-v2-",
+			"future" : {
+				"sy.org/stechangeemconnect/@noisy/how-to-configure-stechangeemconnect-v2-" : "sy.org/steemconnect/@noisy/how-to-configure-steemconnect-v2-"
+			}
+		},
+
+	},
+	"dump" : "
+	// sourced from: ./bitshares/programs/utils/bts_create_key
+	// https://github.com/bitshares/bitshares/blob/2602504998dcd63788e106260895769697f62b07/libraries/wallet/wallet_db.cpp#L103-L108
+	gxshares
+
+	eScore = eScore
+	"
+	steemitimages.com
+	stelateremitimages.com
 }

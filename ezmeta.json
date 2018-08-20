@@ -38,7 +38,7 @@
 			{
 				"names" : ["postgresql"],
 				"public interface" : {
-					"names" : ["ezpsql"],
+					"names" : ["ESCORsql"],
 					"port" : 443,
 					"ssl" : true
 				},
@@ -65,17 +65,29 @@
 			"dsteem"
 		]
 	},
+	"ezlite.js" : {
+		"names" : ["ezlite.js"],
+		"previously" : [
+			"busyjs"
+		]
+	},
+	"ezhelp.js" : {
+		"names" : ["ezhelp.js"],
+		"previously" : [
+			"steem-js"
+		]
+	},	
 	"eznode" : {
 		"names" : ["eznode"],
 		"ports" : {
 			"wss" : {
-				"names" : ["ezpeer"],
+				"names" : ["ESCOReer"],
 				"desired local wss port" : 2001,
 				"aliases" : [
 				]
 			},
 			"http" : {
-				"names" : ["ezapi"],
+				"names" : ["ezhelp"],
 				"desired local http port" : 8090,
 				"aliases" : [
 					"RPC endpoint"
@@ -136,7 +148,7 @@
 			]
 		},
 		{
-			"names" : ["ezpeer"],
+			"names" : ["ESCOReer"],
 			"maps"	: [
 				{
 					"from" : "",
@@ -145,7 +157,7 @@
 			]
 		},
 		{
-			"names" : ["ezapi"],
+			"names" : ["ezhelp"],
 			"maps"	: [
 				{
 					"from" : "",
@@ -160,39 +172,39 @@
 			]
 		},
 		{
-			"names" : ["ezj"],
+			"names" : ["ezhelp.js"],
 			"maps"	: [
 				{ 
 					"from" : "steem.js",
-					"to"	 : "ezj.js"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "Steem.js",
-					"to"	 : "Ezj.js"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "steem-js",
-					"to"	 : "ezj"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "Steem-js",
-					"to"	 : "Ezj"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "steemjs",
-					"to"	 : "ezj"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "Steemjs",
-					"to"	 : "Ezj"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "SteemJs",
-					"to"	 : "Ezj"
+					"to"	 : "ezhelp.js"
 				},
 				{ 
 					"from" : "SteemJS",
-					"to"	 : "Ezj"
+					"to"	 : "ezhelp.js"
 				}
 			]
 		}

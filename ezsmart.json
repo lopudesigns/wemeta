@@ -120,7 +120,7 @@
 						"name" : "special value",
 						"value": "this.signess[0]"	
 					},								
-					"what" : "100000", // $100,000 eUSD
+					"what" : "100000", // $100,000 EUSD
 					"signature" : {
 						"owner" : {
 							"name" : "special value",
@@ -168,8 +168,8 @@
 				"value": "this.signess[0]"	
 			},								
 			"what" : {
-				"name" 	 : "eUSD",
-				"quantity" : 100000 // $100,000 eUSD
+				"name" 	 : "EUSD",
+				"quantity" : 100000 // $100,000 EUSD
 			},
 			"signature" : {
 				"owner" : {
