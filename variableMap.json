@@ -1,0 +1,36 @@
+{
+	"variables" : {
+		"reward_vesting_balance" 					: "ESCORrewardBalance",
+		"reward_vesting_steem"  					: "ESCORrewardBalanceInECO",
+		"vesting_shares"									: "ESCOR",
+		"claim_reward_balance_evaluator" 	: "claimRewardBalance_evaluator",
+		"reward_vesting_steem_to_move"		: "ESCORrewardBalanceInECO_to_move",
+		"rewardSP"												: "ESCORrewardBalanceInECO",
+		"curation_rewards"								: "curationRewards"
+	},
+	"filenames" : {
+		"steem_evaluator"									: "node_evaluator",
+		"steem_api_objects"								: "node_api_objects",
+	}
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+	""																: "",
+}

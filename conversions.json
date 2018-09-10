@@ -31,9 +31,9 @@
 			}
 		},
 		"SteemConnect" : {
-			"current" : "ezAuth",
+			"current" : "weAuth",
 			"future" : {
-				"ezAuth" : "SteemConnect"
+				"weAuth" : "SteemConnect"
 			}
 		},
 		"sy.org/steemconnect/@noisy/how-to-configure-steemconnect-v2-" : {

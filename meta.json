@@ -1,0 +1,281 @@
+{
+	"wenodejs" : {
+		"names" : ["wenodejs"],
+		"previously" : [
+			"dsteem"
+		],
+		"weyoumeDependancies" : [
+		]
+	},
+	"weschemajs" : {
+		"names" : ["weschemajs"],
+		"previously" : [
+			"steemscript",
+			"bonuschain/steemscript"
+		],
+		"weyoumeDependancies" : [
+		]
+	},
+	"weauthjs" : {
+		"previously" : "sc2-sdk",
+		"weyoumeDependancies" : [
+		]
+	},
+	"wecryptojs" : {
+		"names" : ["wecryptojs"],
+		"previously" : [
+			"libcrypto-js"
+		],
+		"weyoumeDependancies" : [
+		]
+	},
+	"werpcjs" : {
+		"names" : ["werpcjs"],
+		"previously" : [
+			"rpc-auth"
+		],
+		"weyoumeDependancies" : [
+			"wenodejs",
+			"wecryptojs"
+		]
+	},
+	"wehelpjs" : {
+		"names" : ["wehelpjs"],
+		"previously" : [
+			"steem-js"
+		],
+		"weyoumeDependancies" : [
+			"werpcjs",
+			{
+				"names" : ["werpcjs"],
+				"weyoumeDependancies" : [
+					"wenodejs",
+					"wecryptojs"
+				]
+			}
+		]
+	},
+	"welitejs" : {
+		"names" : ["welitejs"],
+		"previously" : [
+			"busyjs"
+		],
+		"weyoumeDependancies" : [
+		]
+	},
+	"wesignup" : {
+		"names" : ["wesignup"],
+		"desired local http port" : 5678,
+		"previously" : [
+			"steem signup",
+			"faucet"
+		],
+		"weyoumeDependancies" : [
+			"wehelpjs",
+			{
+				"names" : ["wehelpjs"],
+				"weyoumeDependancies" : [
+					"werpcjs",
+					{
+						"names" : ["werpcjs"],
+						"weyoumeDependancies" : [
+							"wenodejs",
+							"wecryptojs"
+						]
+					}
+				]
+			}
+		],
+		"externalDependancies" : [
+			{
+				"names" : ["mysql"],
+				"public interface" : {
+					"names" : ["ezsql"],
+					"port" : 443,
+					"ssl" : true
+				},
+				"desired local http port" : 5432,
+				"access url template" : "mysql://user:password@localhost:port/db" 
+			}
+		]
+	},
+	"weauth" : {
+		"names" : ["weauth"],
+		"desired local http port" : 5555,
+		"previously" : [
+			"v2.steemconnect.com",
+			"steemconnect.com"
+		],
+		"weyoumeDependancies" : [
+			"weauthjs",
+			"wehelpjs",
+			{
+				"names" : ["wehelpjs"],
+				"weyoumeDependancies" : [
+					"werpcjs",
+					{
+						"names" : ["werpcjs"],
+						"weyoumeDependancies" : [
+							"wenodejs",
+							"wecryptojs"
+						]
+					}
+				]
+			}
+		],
+		"externalDependancies" : [
+			{
+				"names" : ["postgresql"],
+				"public interface" : {
+					"names" : ["wesql"],
+					"port" : 443,
+					"ssl" : true
+				},
+				"desired local http port" : 5432,
+				"access url template" : "postgresql://user:password@localhost:port/db" 
+			}
+		]
+	},
+	"weapp" : {
+		"names" : ["weapp"],
+		"desired local http port" : 3456,
+		"previously" : [
+			"busy.org"
+		],
+		"weyoumeDependancies" : [
+			"wehelpjs"
+		]
+	},
+	"wenode" : {
+		"names" : ["wenode"],
+		"ports" : {
+			"wss" : {
+				"names" : ["ESCOReer"],
+				"desired local wss port" : 2001,
+				"aliases" : [
+				]
+			},
+			"http" : {
+				"names" : ["wehelpjs"],
+				"desired local http port" : 8090,
+				"aliases" : [
+					"RPC endpoint"
+				]
+			}
+		}
+	},
+	"keywords" : [
+		{
+			"names" : ["WeYouMe Auth"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["WeYouMe Network"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["WeYouMenetwork"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["weauth"],
+			"maps"	: [
+				"steemconnect"
+			]
+		},
+		{
+			"names" : ["wesignup"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["node"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["ESCOReer"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["wehelpjs"],
+			"maps"	: [
+				{
+					"from" : "",
+					"to"	 : ""
+				}
+			]
+		},
+		{
+			"names" : ["ezconsole"],
+			"synonyms"	: [
+				"weauth"
+			]
+		},
+		{
+			"names" : ["wehelpjs"],
+			"maps"	: [
+				{ 
+					"from" : "steem.js",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "Steem.js",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "steem-js",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "Steem-js",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "steemjs",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "Steemjs",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "SteemJs",
+					"to"	 : "wehelpjs"
+				},
+				{ 
+					"from" : "SteemJS",
+					"to"	 : "wehelpjs"
+				}
+			]
+		}
+	]
+}

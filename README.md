@@ -1,3 +1,3 @@
-### EZ META
+### WeMeta
 
-[ezmeta.json](https://github.com/lopudesigns/ezmeta/blob/dev/ezmeta.json)
+[WeMeta.json](https://github.com/weyoume/wemeta/blob/dev/meta.json)
