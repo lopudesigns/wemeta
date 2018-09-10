@@ -1,0 +1,20 @@
+{
+  "name": "wemeta",
+  "version": "1.0.0",
+  "description": "[WeMeta.json](https://github.com/weyoume/wemeta/blob/dev/meta.json)",
+  "main": "meta.js",
+  "scripts": {
+		"push" : "./scripts/push.sh",
+		"pull" : "./scripts/pull.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopudesigns/wemeta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lopudesigns/wemeta/issues"
+  },
+  "homepage": "https://github.com/lopudesigns/wemeta#readme"
+}
