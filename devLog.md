@@ -1,6 +1,5 @@
 ### Weekly WeYouMe Development Update Log
 
-
 #### 23/09/2018 
 ##### Hangout #25
 
