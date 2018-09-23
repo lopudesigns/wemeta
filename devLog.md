@@ -38,3 +38,4 @@
 			* VSCode (Visual Studio Code)
 				* Preferences ported from previous workstation using [VSCode Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 				* VSCode integrated terminal set to WSL Bash.exe
+			* Configure .bashrc profile
