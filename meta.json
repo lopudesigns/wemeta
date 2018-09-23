@@ -277,5 +277,18 @@
 				}
 			]
 		}
+	],
+	"publishOrder" : [
+		"wenodejs",
+		"weschemajs",
+		"weauthjs",
+		"wecryptojs",
+		"werpcjs",
+		"wehelpjs",
+		"welitejs",
+		"wesignup",
+		"weauth",
+		"weapp",
+		"wenode"
 	]
 }
