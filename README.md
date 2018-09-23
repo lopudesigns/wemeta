@@ -17,6 +17,15 @@
 		* [WeAuth](https://github.com/weyoume/weauth) is a 2 part server/client repository for running privatised functions like creating user accounts on public request signed with WeYouMe controlled testnet accounts
 	* Solution
 		* Make a lightweight api server for allowing any private user to run network functions expanding the network without any unnecessary overhead which will reside at [WePrivateJs](https://github.com/weyoume/weprivatejs)
+* Created automated dependancy based republisher for multiple WeYouMe repositories and npm packages
+	* Problem
+		* When making changes in a heavily dependant library such as [WeCryptoJs](https://github.com/lopudesigns/wecryptojs) it is a pain to manually rebuild, test, commit, push, and republish all libraries which also depend on that library.
+	* Solution
+		* We created [WePublish](https://github.com/lopudesigns/wepublish) which is a bash and nodejs program which can walk through a directory structure of packages in a specified dependant order, rebuild, test, commit, push, and republish all the libraries given to it in an automated fashion
+		* ![Part 1 run WePublish](https://media.giphy.com/media/8PaTfLElK6SfCy6x3f/100.webp)
+		* ![Part 2 WePublish](https://media.giphy.com/media/1BfREhmbWX9jTZfoJX/100.webp)
+		* ![Part 3 WePublish](https://media.giphy.com/media/ygAnXSZjhnSh8uYzGQ/100.webp)
+		
 * Steem API downtime fix on [steem.weyoume.io](steem.weyoume.io)
 	* Had to wait for an available wss:// API endpoint to come back online after the hardfork glitch [wss://gtg.steem.house:8090](gtg.steem.house) ended up being the first working API endpoint we could find.
 * New developer equipment
