@@ -150,7 +150,7 @@
 		"names" : ["wenode"],
 		"ports" : {
 			"wss" : {
-				"names" : ["ESCOReer"],
+				"names" : ["SCOREeer"],
 				"desired local wss port" : 2001,
 				"aliases" : [
 				]
@@ -217,7 +217,7 @@
 			]
 		},
 		{
-			"names" : ["ESCOReer"],
+			"names" : ["SCOREeer"],
 			"maps"	: [
 				{
 					"from" : "",
