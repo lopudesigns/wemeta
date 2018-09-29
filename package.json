@@ -4,8 +4,8 @@
   "description": "[WeMeta.json](https://github.com/weyoume/wemeta/blob/dev/meta.json)",
   "main": "meta.js",
   "scripts": {
-		"push" : "./scripts/push.sh",
-		"pull" : "./scripts/pull.sh"
+		"push" : "git add . ; git commit -m 'ready' ; git push origin dev",
+		"pull" : "git pull origin dev"
   },
   "repository": {
     "type": "git",
