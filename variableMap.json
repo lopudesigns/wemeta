@@ -70,6 +70,7 @@
 			"steemitLinks" : "blockchainProtocolLinks",
 			"Steem Power" : "SCORE",
 			"steem power" : "SCORE",
+			"abs_rshares" : "abs_SCOREreward",
 			"SBD" : "TSD",
 			"SP" : "SCORE",
 			"import SteemConnect" : "weauthjsInstance",
@@ -149,7 +150,8 @@
 			"rewardSbd" : "rewardTSD",
 			"withdraw-vesting" : "withdrawSCORE",
 			"transfer-to-vesting" : "transferToSCORE",
-			"busyAPI" : "blockchainAPI"
+			"busyAPI" : "blockchainAPI",
+			"total_SCORE" : "totalSCORE"
 		},
 		"targeted diretories" : [
 			{

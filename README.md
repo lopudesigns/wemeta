@@ -52,3 +52,56 @@
 				* Preferences ported from previous workstation using [VSCode Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 				* VSCode integrated terminal set to WSL Bash.exe
 			* Configure .bashrc profile
+
+### Weekly WeYouMe Development Update Log
+
+#### 30/09/2018 
+##### Hangout #26
+
+###### Nikolaj Frey
+* Authentication Interface Finalisation
+	* Final testing
+		* tested and working
+	* Modifications
+		* Login modification
+			* Added a sign-up link on all login prompts
+				* Before
+					* ![Steemconnect log in popup](https://gyazo.com/6dba03d8fba9bf635c9959e65dd968f0)
+				* After
+					* ![Steemconnect log in popup](https://gyazo.com/6883839dd703914d61810d62555181c5)
+			* Added password login support
+				* For proxy accounts
+					* Problem
+						* a proxy account inherits the public keys of the creator account, but when trying to log-in with the password used for the creator account it fails because the login algorithm uses the proxy accounts username in the WIF generation process. 
+					* Solution
+						* So we check account_auth usernames and generate WIF keys based off those values too
+				* For non-standard permission public keys
+					* Problem
+						* If an account was generated with all permission public keys set as the owner public key, loggin in would not work because the login algorithm generates the memo public key using the username+password+permission algorithm but the account does not have that public key assosciated with it
+					* Solution
+						* For loop and generate all possible public keys and then check if any match any of the permission keys
+		* Sign up/Register/Create account modification
+			* Hide TME fee input and SCORE transfer input and replace with a "show-more" button
+			* Auto fill TME fee for account creation
+			* No suggested password
+			* Hide password input like any other form
+			* Before
+				* ![Steemconnect register/accounts/create modal](https://gyazo.com/0e4d839b2ab2d3c45255fade88869299)
+			* After
+				* ![Steemconnect register/accounts/create modal Part 1](https://gyazo.com/f23daf86271de16ae58d07f6ee6f1fad)
+				* ![Steemconnect register/accounts/create modal Part 2](https://gyazo.com/7c50a2cb3547004410a1ae4f6897fba8)
+		* Navigation additions
+			* Added Login, Register, and Console button links to the landing page
+				* Before
+					* ![Steemconnect Landing Page](https://gyazo.com/eb15bad063ffb4f95d7965b0e9bf34f6)
+				* After
+					* ![WeAuth Landing Page](https://gyazo.com/929c74c86d16377bbea5ea476fcd46f3)	
+			* Added Home, Login, Register, and Console button links to the console page
+			* Added New Account button to the console page
+				* Before
+					* ![Steemconnect Console/Dashboard](https://gyazo.com/d1256d4fd805bb4cbede63e2d080b37f)	
+				* After
+					* ![WeAuth Console/Dashboard](https://gyazo.com/02cbe76d3e89072ed3e1b8160661361b)	
+		* Url changes
+			* added /register support ontop of /accounts/create
+		
