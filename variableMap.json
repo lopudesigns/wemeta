@@ -4,8 +4,7 @@
 	},
 	"testnet": {
 		"backandforth" : {
-			"ACTIONS_DISPLAY_LIMIT" : "ACTIONS_DISlaterPLAY_LIMIT",
-			"CURRENT_DISPLAYED" : "CURRENT_DISlaterPLAYED",
+			"DISPLAY" : "DISlaterPLAY",
 			"SteemConnect.\"":"SteemConnectlater.\"",
 			"steemitimages" : "stelateremitimages",
 		},
@@ -149,9 +148,11 @@
 			"rewardSteem" : "rewardTME",
 			"rewardSbd" : "rewardTSD",
 			"withdraw-vesting" : "withdrawSCORE",
-			"transfer-to-vesting" : "transferToSCORE",
+			"transfer-to-vesting" : "transferTMEtoSCOREfund",
 			"busyAPI" : "blockchainAPI",
-			"total_SCORE" : "totalSCORE"
+			"total_SCORE" : "totalSCORE",
+			"received_SCORE" : "SCOREreceived",
+			"delegated_SCORE" : "SCOREdelegated",
 		},
 		"targeted diretories" : [
 			{
