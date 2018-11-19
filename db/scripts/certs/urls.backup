@@ -1,0 +1,23 @@
+auth.weyoume.src \
+console.weyoume.src \
+admin.weyoume.src \
+api.weyoume.src \
+weyoume.src \
+alpha.weyoume.src \
+peer.weyoume.src \
+test.weyoume.src \
+test1.weyoume.src \
+test2.weyoume.src \
+exchange.weyoume.src \
+bitshares.weyoume.src \
+steem.weyoume.src \
+steemit.weyoume.src \
+busy.weyoume.src \
+api.weyoume.src \
+alopu.src \
+api.alopu.src \
+lopudesigns.src \
+auth.alopu.src \
+node.weyoume.src \
+peer.weyoume.src \
+peers.weyoume.src
